@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>How do we work | Agribiochem Pvt. Ltd.</title>
+  <link rel="icon" type="image/png" href="assets/images/logo/Agribiochems_logo1.jpg">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+  <!-- AOS JS & CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" />
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.css" rel="stylesheet">
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <style>
+    /* remove browser default spacing */
+    html, body {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+    }
+
+    /* make footer stick to bottom */
+    #footer {
+      margin-top: auto;
+      background-color: #1a0b3c; /* your footer bg color */
+      color: #fff;
+    }
+  </style>
+</head>
+<body>
+  <!-- Scroll Progress Bar -->
+<div id="scrollProgress"></div>
+
+<style>
+  /* Cool Scroll Progress Bar */
+  #scrollProgress {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 6px;
+    background: linear-gradient(90deg, #00c6ff, #0072ff);
+    border-radius: 0 4px 4px 0;
+    z-index: 9999;
+    overflow: hidden;
+    transition: width 0.25s ease-out;
+  }
+
+  /* Sparkle/shine effect */
+  #scrollProgress::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -20px;
+    width: 40px;
+    height: 100%;
+    background: linear-gradient(
+      120deg,
+      rgba(255, 255, 255, 0.8),
+      rgba(255, 255, 255, 0)
+    );
+    animation: sparkle 2s infinite linear;
+  }
+
+  /* Glow effect */
+  #scrollProgress {
+    box-shadow: 0 0 10px rgba(0, 114, 255, 0.6),
+                0 0 20px rgba(0, 198, 255, 0.4);
+    animation: glow 2s infinite alternate;
+  }
+
+  @keyframes sparkle {
+    0% { left: -40px; }
+    100% { left: 100%; }
+  }
+
+  @keyframes glow {
+    0% { box-shadow: 0 0 10px rgba(0, 114, 255, 0.6), 0 0 20px rgba(0, 198, 255, 0.4); }
+    50% { box-shadow: 0 0 20px rgba(0, 114, 255, 0.8), 0 0 40px rgba(0, 198, 255, 0.6); }
+    100% { box-shadow: 0 0 10px rgba(0, 114, 255, 0.6), 0 0 20px rgba(0, 198, 255, 0.4); }
+  }
+</style>
+
+<script>
+  window.addEventListener("scroll", () => {
+    let scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
+    let scrollHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+    let progress = (scrollTop / scrollHeight) * 100;
+    document.getElementById("scrollProgress").style.width = progress + "%";
+  });
+</script>
+
+  <!-- header section  -->
+  <div id="header"></div>
+
+   <section class="py-5 bg-white">
+    <div class="container">
+      <div class="row align-items-center">
+        <!-- Text -->
+        <div class="col-lg-7 position-relative" id="text-block">
+  <h2 class="section-title mb-3 typewriter">Complete Supply Management</h2>
+  <p class="fade-text">
+    We confirm all regulations related to product registration, testing, evaluation, and quality approval
+    procedures. Evaluations happen in India and your country by industry experts.
+  </p>
+
+  <h2 class="section-title mt-4 mb-3 typewriter">Conformance to EXIM Procedures</h2>
+  <p class="fade-text">
+    Insurance, customs clearance, statutory procedures related to EXIM duties and taxes are some of the basic
+    procedures we follow. We ensure your imports conform fully to legal and statutory procedures in your
+    country.
+  </p>
+
+  <h2 class="section-title mt-4 mb-3 typewriter">Pesticide Residue – Low to None</h2>
+  <p class="fade-text">
+    Our products leave very low (within WHO & ISO tolerance limits) to zero residues after application —
+    applicable across residential, commercial, and agricultural uses.
+  </p>
+</div>
+
+<!-- JavaScript -->
+<script>
+  // Typing animation for headings
+  document.querySelectorAll('.typewriter').forEach(el => {
+    const text = el.textContent;
+    el.textContent = '';
+    let i = 0;
+
+    function typeWriter() {
+      if (i < text.length) {
+        el.textContent += text.charAt(i);
+        i++;
+        setTimeout(typeWriter, 40); // typing speed
+      }
+    }
+
+    // Trigger when visible
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          typeWriter();
+          observer.unobserve(el); // run once
+        }
+      });
+    }, { threshold: 0.6 });
+    observer.observe(el);
+  });
+
+  // Fade-in paragraphs
+  const fadeEls = document.querySelectorAll('.fade-text');
+  const fadeObserver = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('fade-in-up');
+      }
+    });
+  }, { threshold: 0.3 });
+  fadeEls.forEach(el => fadeObserver.observe(el));
+</script>
+
+<!-- CSS -->
+<style>
+  .fade-text {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 1s ease, transform 1s ease;
+  }
+  .fade-in-up {
+    opacity: 1;
+    transform: translateY(0);
+  }
+</style>
+
+
+        <!-- Image -->
+        <div class="col-lg-5 text-center" data-aos="fade-left">
+          <img src="./assets/images/How do we work/img1 (1).webp" alt="Supply Management"
+            class="img-fluid rounded shadow zoom-on-hover">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section 2 -->
+  <section class="py-5 bg-light">
+    <div class="container">
+      <div class="row align-items-center">
+        <!-- Image -->
+        <div class="col-lg-5 text-center mb-4 mb-lg-0" data-aos="fade-right">
+          <img src="./assets/images/How do we work/img2.webp" alt="Agricultural Applications"
+            class="img-fluid rounded shadow zoom-on-hover">
+        </div>
+        <!-- Text -->
+        <div class="col-lg-7 position-relative" id="agriculture-block">
+  <!-- Heading with animated underline only -->
+<h2 class="section-title mb-3 typewriter-agri hover-line">
+  Applications – Food & Soil Safety
+</h2>
+
+  <p class="fade-text-agri">
+    All our products carry food safety labels from India and your country. We test rigorously to ensure safety
+    for consumers of all ages and health conditions. Our solutions are easy to use, safe for soil, crops, and
+    yields, with no negative impact on soil fertility.
+  </p>
+
+  <!-- <h2 class="section-title mt-4 mb-3 typewriter-agri">Commercial Applications – Environment Friendly</h2> -->
+   <h2 class="section-title mt-4 mb-3 typewriter-agri hover-line">
+  Commercial Applications – Environment Friendly
+</h2>
+
+  <p class="fade-text-agri">
+    Our pesticides can be used in restaurants, hotels, hospitals, offices, and other high-traffic places. Our
+    R&D ensures safety while effectively removing pests and leaving a pleasant fragrance.
+  </p>
+</div>
+
+<!-- JavaScript -->
+<script>
+  // Typing animation for Agricultural section
+  document.querySelectorAll('.typewriter-agri').forEach(heading => {
+    const fullText = heading.textContent;
+    heading.textContent = '';
+    let index = 0;
+
+    function typeWriterAgri() {
+      if (index < fullText.length) {
+        heading.textContent += fullText.charAt(index);
+        index++;
+        setTimeout(typeWriterAgri, 45); // speed for agri section
+      }
+    }
+
+    const observerAgri = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          typeWriterAgri();
+          observerAgri.unobserve(heading); // run once per heading
+        }
+      });
+    }, { threshold: 0.6 });
+
+    observerAgri.observe(heading);
+  });
+
+  // Fade-in effect for Agricultural paragraphs
+  const fadeElementsAgri = document.querySelectorAll('.fade-text-agri');
+  const fadeObserverAgri = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('fade-in-up-agri');
+      }
+    });
+  }, { threshold: 0.3 });
+
+  fadeElementsAgri.forEach(el => fadeObserverAgri.observe(el));
+</script>
+
+<!-- CSS -->
+<style>
+  /* Fade-in for agri section */
+  .fade-text-agri {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 1s ease, transform 1s ease;
+  }
+  .fade-in-up-agri {
+    opacity: 1;
+    transform: translateY(0);
+  }
+</style>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Section 3 -->
+  <!-- Section with Moving Background -->
+   <section class="py-5 bg-white">
+  <div class="container">
+    <!-- Section 3 -->
+<section class="py-5 bg-white">
+  <div class="container">
+    <div class="row align-items-center">
+      
+      <!-- Text -->
+      <div class="col-lg-7" id="residential-block">
+        <h2 class="section-title mb-3 typewriter-resi">Residential Applications – Trusted Worldwide</h2>
+        <p class="fade-text-resi">
+          We are a preferred pesticide and insecticide brand in Asia, with a strong customer base in Bhutan,
+          Sri Lanka, Nepal, India, and the UAE. Our products protect every corner of your home — from gardens to
+          kitchens — ensuring safe air, water, and food.
+        </p>
+
+        <h2 class="section-title mt-4 mb-3 typewriter-resi">Customer Support – Always Here for You</h2>
+        <p class="fade-text-resi">
+          Our dedicated support is available 24/7. From import clearance and documentation to customs-related issues,
+          we are always ready to assist you — proven by our strong customer testimonials.
+        </p>
+      </div>
+
+      <!-- Image -->
+      <div class="col-lg-5 text-center mt-4 mt-lg-0" data-aos="fade-left">
+        <img src="./assets/images/How do we work/img5.webp" 
+             alt="Residential Applications"
+             class="img-fluid rounded shadow zoom-on-hover">
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- JavaScript -->
+<script>
+  // Typing animation for Residential section
+  document.querySelectorAll('.typewriter-resi').forEach(heading => {
+    const fullTextResi = heading.textContent;
+    heading.textContent = '';
+    let indexResi = 0;
+
+    function typeWriterResi() {
+      if (indexResi < fullTextResi.length) {
+        heading.textContent += fullTextResi.charAt(indexResi);
+        indexResi++;
+        setTimeout(typeWriterResi, 45);
+      }
+    }
+
+    const observerResi = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          typeWriterResi();
+          observerResi.unobserve(heading);
+        }
+      });
+    }, { threshold: 0.6 });
+
+    observerResi.observe(heading);
+  });
+
+  // Fade-in effect for Residential paragraphs
+  const fadeElementsResi = document.querySelectorAll('.fade-text-resi');
+  const fadeObserverResi = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('fade-in-up-resi');
+      }
+    });
+  }, { threshold: 0.3 });
+
+  fadeElementsResi.forEach(el => fadeObserverResi.observe(el));
+</script>
+
+<!-- CSS -->
+<style>
+  /* Fade-in for residential section */
+  .fade-text-resi {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 1s ease, transform 1s ease;
+  }
+  .fade-in-up-resi {
+    opacity: 1;
+    transform: translateY(0);
+  }
+</style>
+
+
+      <!-- Image -->
+      <!-- <div class="col-lg-5 text-center mt-4 mt-lg-0" data-aos="fade-left">
+        <img src="./assets/images/How do we work/img2.png" 
+             alt="Residential Applications"
+             class="img-fluid rounded shadow zoom-on-hover">
+      </div> -->
+    </div>
+  </div>
+</section>
+
+
+
+
+  
+
+  <!-- footer section  -->
+  <div id="footer"></div>
+
+  <!-- Scroll to Top Button -->
+  <button id="scrollTopBtn"
+    style="position:fixed; bottom:25px; right:25px; background-color:var(--primary-color); color:#fff; border:none; border-radius:50%; width:50px; height:50px; font-size:1.5rem; display:none; cursor:pointer; z-index:999;">
+    <i class="bi bi-chevron-double-up"></i>
+  </button>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- AOS JS -->
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script src="assets/js/main.js"></script>
+  <script>
+    AOS.init({
+      duration: 500,
+      once: true
+    });
+  </script>
+</body>
+</html>
+
+

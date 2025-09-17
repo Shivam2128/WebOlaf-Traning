@@ -1,0 +1,882 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Company Sections | Agribiochem</title>
+  <link rel="icon" type="image/png" href="assets/images/logo/Agribiochems_logo1.jpg">
+  <!-- Bootstrap CSS
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  AOS Animation CSS
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet"> -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <!-- AOS JS & CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" />
+
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.css" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/style.css">
+  <style>
+    body {
+      scroll-behavior: smooth;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      margin: 0;
+      padding: 0;
+
+    }
+    main{
+        flex: 1;
+    }
+    section {
+      padding: 80px 0;
+    }
+    .section-title {
+      font-weight: bold;
+      margin-bottom: 40px;
+    }
+    .leader-img {
+      width: 120px;
+      height: 120px;
+      object-fit: cover;
+      border-radius: 50%;
+      margin-bottom: 15px;
+    }
+    .feature-icon {
+      font-size: 40px;
+      color: #0d6efd;
+      margin-bottom: 15px;
+    }
+    #landing img {
+  object-fit: cover;
+  object-position: center;
+}
+
+#landing{
+    min-height: 70vh;
+    padding-top: 2rem !important;
+    padding-bottom: 2rem !important;
+}
+
+  </style>
+</head>
+<body>
+
+    <div id="header"></div>
+    <!-- Scroll Progress Bar -->
+<div id="scrollProgress"></div>
+
+<!-- Scroll Progress Bar -->
+<div id="scrollProgress"></div>
+
+<style>
+  /* Cool Scroll Progress Bar */
+  #scrollProgress {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 6px;
+    background: linear-gradient(90deg, #00c6ff, #0072ff);
+    border-radius: 0 4px 4px 0;
+    z-index: 9999;
+    overflow: hidden;
+    transition: width 0.25s ease-out;
+  }
+
+  /* Sparkle/shine effect */
+  #scrollProgress::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -20px;
+    width: 40px;
+    height: 100%;
+    background: linear-gradient(
+      120deg,
+      rgba(255, 255, 255, 0.8),
+      rgba(255, 255, 255, 0)
+    );
+    animation: sparkle 2s infinite linear;
+  }
+
+  /* Glow effect */
+  #scrollProgress {
+    box-shadow: 0 0 10px rgba(0, 114, 255, 0.6),
+                0 0 20px rgba(0, 198, 255, 0.4);
+    animation: glow 2s infinite alternate;
+  }
+
+  @keyframes sparkle {
+    0% { left: -40px; }
+    100% { left: 100%; }
+  }
+
+  @keyframes glow {
+    0% { box-shadow: 0 0 10px rgba(0, 114, 255, 0.6), 0 0 20px rgba(0, 198, 255, 0.4); }
+    50% { box-shadow: 0 0 20px rgba(0, 114, 255, 0.8), 0 0 40px rgba(0, 198, 255, 0.6); }
+    100% { box-shadow: 0 0 10px rgba(0, 114, 255, 0.6), 0 0 20px rgba(0, 198, 255, 0.4); }
+  }
+</style>
+
+<script>
+  window.addEventListener("scroll", () => {
+    let scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
+    let scrollHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+    let progress = (scrollTop / scrollHeight) * 100;
+    document.getElementById("scrollProgress").style.width = progress + "%";
+  });
+</script>
+
+
+
+  <main>
+
+<section id="landing" class="d-flex align-items-center text-center text-white position-relative overflow-hidden">
+  <!-- Background Carousel -->
+  <div id="landingCarousel" class="carousel slide position-absolute top-0 start-0 w-100 h-100" data-bs-ride="carousel" data-bs-interval="4000">
+    <div class="carousel-inner w-100 h-100">
+      <div class="carousel-item active">
+        <img src="assets/images/Company/img3.png" class="w-100 landing-bg" alt="Slide 1">
+      </div>
+      <div class="carousel-item">
+        <img src="assets/images/Company/b-udaykiran-1JsVrsGCAlY-unsplash.jpg" class="w-100 landing-bg" alt="Slide 2">
+      </div>
+      <div class="carousel-item">
+        <img src="assets/images/Company/steven-weeks-DUPFowqI6oI-unsplash.jpg" class="w-100 landing-bg" alt="Slide 3">
+      </div>
+    </div>
+  </div>
+
+  <!-- Dark overlay -->
+  <div class="position-absolute top-0 start-0 w-100 h-100" style="background: rgba(0,0,0,0.6); z-index:1;"></div>
+
+  <!-- Content -->
+  <div class="container position-relative" style="z-index:2;">
+    <!-- <h1 class="fw-bold mb-3" data-aos="fade-down">Welcome to <strong>AgriBioChem</strong></h1> -->
+     <h1 class="fw-bold mb-3" data-aos="fade-down">
+  Welcome to <strong>AgriBioChem</strong> – 
+  <span id="typewriter-text" class="text-success"></span>
+</h1>       
+<script>
+  const words = [
+    "Human Safety",
+    "Public Health",
+    "Eco Friendly Solutions",
+    "Global Standards",
+    "Trusted Worldwide"
+  ];
+
+  let wordIndex = 0;
+  let charIndex = 0;
+  let currentWord = "";
+  let isDeleting = false;
+  const typeEl = document.getElementById("typewriter-text");
+
+  function typeEffect() {
+    currentWord = words[wordIndex];
+    
+    if (!isDeleting) {
+      // Typing forward
+      typeEl.textContent = currentWord.substring(0, charIndex + 1);
+      charIndex++;
+
+      if (charIndex === currentWord.length) {
+        isDeleting = true;
+        setTimeout(typeEffect, 1500); // Pause before deleting
+        return;
+      }
+    } else {
+      // Deleting backward
+      typeEl.textContent = currentWord.substring(0, charIndex - 1);
+      charIndex--;
+
+      if (charIndex === 0) {
+        isDeleting = false;
+        wordIndex = (wordIndex + 1) % words.length; // Next word
+      }
+    }
+
+    const speed = isDeleting ? 50 : 100; // Faster deleting
+    setTimeout(typeEffect, speed);
+  }
+
+  // Start typing effect
+  typeEffect();
+</script>
+
+<style>
+  #typewriter-text {
+    border-right: 2px solid #28a745; /* green cursor */
+    padding-right: 4px;
+    white-space: nowrap;
+    overflow: hidden;
+  }
+</style>
+<!-- ------------------------------------------------------------- -->
+
+    <p class="lead mb-4" data-aos="fade-up">Cultivating Innovation for a Greener Future</p>
+
+    <a href="#journey" class="btn btn-success btn-lg shadow-lg" data-aos="zoom-in">Get Started</a>
+    <a href="#who" class="btn btn-outline-light btn-lg ms-3 shadow-lg" data-aos="zoom-in">Learn More</a>
+  </div>
+</section>
+
+<style>
+  /* SECTION CONTAINER */
+  #landing {
+    min-height: 60vh;            /* shrink height */
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+  }
+
+  /* IMAGES */
+  .landing-bg {
+    height: 100%;
+    min-height: 60vh;
+    object-fit: cover;
+    object-position: center;
+  }
+
+  /* MOBILE RESPONSIVE */
+  @media (max-width: 768px) {
+    #landing {
+      min-height: 50vh;
+      padding-top: 2.5rem;
+      padding-bottom: 2.5rem;
+    }
+
+    #landing h1 {
+      font-size: 1.8rem;
+    }
+
+    #landing p.lead {
+      font-size: 1rem;
+      margin-bottom: 1.5rem;
+    }
+
+    .btn-lg {
+      padding: 0.6rem 1.2rem;
+      font-size: 1rem;
+    }
+  }
+</style>
+
+
+
+<!-- Our Journey -->
+<section id="journey" class="bg-light py-5">
+  <div class="container" data-aos="fade-up">
+    <div class="row align-items-center">
+      <!-- Flip Card -->
+      <div class="col-lg-6 mb-4">
+        <div class="flip-card shadow">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <img src="assets/images/about/img4.webp" 
+                   alt="Journey" class="img-fluid rounded-3">
+            </div>
+            <div class="flip-card-back d-flex align-items-center justify-content-center rounded-3">
+              <p class="text-white px-3">🌱 A legacy of resilience and innovation. Our milestones showcase passion, teamwork, and trust.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Text -->
+      <div class="col-lg-6">
+        <!-- <h2 class="section-title">Our Journey</h2> -->
+         <h2 class="section-title underline-hover">Our Journey</h2>
+
+<style>
+/* Underline effect for Our Journey */
+.underline-hover {
+  display: inline-block;
+  position: relative;
+  cursor: pointer;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.underline-hover::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 3px;
+  bottom: -5px;
+  left: 0;
+  background-color: #2e7d32; /* green underline */
+  transition: width 1.5s ease; /* smooth and slow */
+}
+
+.underline-hover:hover::after {
+  width: 100%; /* expands to full width of text */
+}
+</style>
+
+        <p>From humble beginnings to becoming a trusted industry leader, our journey reflects resilience, innovation, and the unwavering support of our dedicated team and customers.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- Who We Are -->
+<section id="who" class="py-5 position-relative" style="background: #f4f9f4; overflow:hidden;">
+  <!-- Floating Objects Background -->
+  <div class="floating-objects">
+    <span></span><span></span><span></span><span></span><span></span>
+    <span></span><span></span><span></span><span></span><span></span>
+  </div>
+
+  <div class="container text-center" data-aos="fade-up">
+    <h2 class="section-title underline-hover">Who We Are</h2>
+    <p class="mb-5">We are a community of innovators, creators, and problem solvers. Our story is best told through the impact we create.</p>
+    
+    <!-- ✅ Added justify-content-center here -->
+    <div class="row g-4 text-center justify-content-center">
+      <div class="col-md-3" data-aos="zoom-in">
+        <div class="stat-box shadow p-4 bg-white rounded-3">
+          <div class="stat-number" data-target="15">0</div>
+          <p>Years of Experience</p>
+        </div>
+      </div>
+      <div class="col-md-3" data-aos="zoom-in" data-aos-delay="200">
+        <div class="stat-box shadow p-4 bg-white rounded-3">
+          <div class="stat-number" data-target="300">0</div>
+          <p>Happy Clients</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<style>
+/* Floating eco particles - more bubbles */
+.floating-objects span {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background: rgba(100, 200, 100, 0.15);
+  border-radius: 50%;
+  bottom: -40px;
+  animation: floatUp 15s linear infinite;
+}
+.floating-objects span:nth-child(1) { left: 5%; animation-delay: 0s; width:12px; height:12px; }
+.floating-objects span:nth-child(1) { left: 5%; animation-delay: 0s; width:12px; height:12px; }
+.floating-objects span:nth-child(1) { left: 5%; animation-delay: 0s; width:12px; height:12px; }
+.floating-objects span:nth-child(1) { left: 5%; animation-delay: 0s; width:12px; height:12px; }
+.floating-objects span:nth-child(2) { left: 15%; animation-delay: 2s; width:20px; height:20px; }
+.floating-objects span:nth-child(3) { left: 25%; animation-delay: 4s; width:18px; height:18px; }
+.floating-objects span:nth-child(4) { left: 35%; animation-delay: 6s; width:22px; height:22px; }
+.floating-objects span:nth-child(5) { left: 45%; animation-delay: 8s; width:25px; height:25px; }
+.floating-objects span:nth-child(6) { left: 60%; animation-delay: 3s; width:15px; height:15px; }
+.floating-objects span:nth-child(7) { left: 70%; animation-delay: 7s; width:28px; height:28px; }
+.floating-objects span:nth-child(8) { left: 80%; animation-delay: 9s; width:18px; height:18px; }
+.floating-objects span:nth-child(9) { left: 90%; animation-delay: 5s; width:22px; height:22px; }
+.floating-objects span:nth-child(10) { left: 50%; animation-delay: 10s; width:30px; height:30px; }
+
+@keyframes floatUp {
+  0% { transform: translateY(0) scale(1); opacity: 0.6; }
+  50% { opacity: 1; }
+  100% { transform: translateY(-900px) scale(0.6); opacity: 0; }
+}
+
+/* Underline effect - centered */
+.underline-hover {
+  display: inline-block;
+  position: relative;
+  cursor: pointer;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.underline-hover::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 3px;
+  bottom: -5px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #2e7d32;
+  transition: width 1.5s ease;
+}
+
+.underline-hover:hover::after {
+  width: 100%;
+}
+
+/* Stat box style */
+.stat-box {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.stat-box:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+}
+
+.stat-number {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #2e7d32; /* green */
+}
+/* Floating eco particles - darker bubbles */
+.floating-objects span {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background: rgba(46, 125, 50, 0.35); /* darker green, more visible */
+  border-radius: 50%;
+  bottom: -40px;
+  animation: floatUp 15s linear infinite;
+}
+
+</style>
+
+<script>
+// Number counter animation
+document.addEventListener("DOMContentLoaded", () => {
+  const counters = document.querySelectorAll('.stat-number');
+  const speed = 100; // smaller = faster
+
+  const animateCounters = () => {
+    counters.forEach(counter => {
+      const updateCount = () => {
+        const target = +counter.getAttribute('data-target');
+        const count = +counter.innerText;
+        const inc = Math.ceil(target / speed);
+
+        if (count < target) {
+          counter.innerText = count + inc;
+          setTimeout(updateCount, 30);
+        } else {
+          counter.innerText = target + "+";
+        }
+      };
+      updateCount();
+    });
+  };
+
+  // Run animation when section is visible
+  let whoSection = document.getElementById("who");
+  let observer = new IntersectionObserver(entries => {
+    if (entries[0].isIntersecting) {
+      animateCounters();
+      observer.disconnect();
+    }
+  }, { threshold: 0.5 });
+
+  observer.observe(whoSection);
+});
+</script>
+
+
+<!-- Vision & Mission -->
+<section id="vision" class="py-5" style="background: #eef6ff;">
+  <div class="container" data-aos="fade-up">
+    <div class="row align-items-center">
+      <div class="col-lg-6 mb-4">
+        <h2 class="section-title">Vision & Mission</h2>
+        <p>Our vision is to shape the future with sustainable solutions and groundbreaking innovations. Our mission is to empower businesses and individuals through technology-driven excellence.</p>
+      </div>
+      <div class="col-lg-6">
+        <div class="flip-card shadow">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <img src="assets/images/Company/img4.png" 
+                   alt="Vision" class="img-fluid rounded-3">
+            </div>
+            <div class="flip-card-back d-flex align-items-center justify-content-center rounded-3">
+              <p class="text-white px-3">🌍 Our Commitment: Sustainability, Innovation & Excellence to transform tomorrow.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+<style>
+  /* Container reserves space (responsive) and prevents overlapping */
+  .flip-card {
+    position: relative;
+    width: 100%;
+    max-width: 640px;        /* adjust as needed */
+    margin: 0 auto;
+    border-radius: 12px;
+    overflow: hidden;
+    perspective: 1000px;
+    z-index: 0;
+  }
+
+  /* Modern browsers: use aspect-ratio for a responsive height */
+  @supports (aspect-ratio: 16/9) {
+    .flip-card { aspect-ratio: 16 / 9; }
+  }
+
+  /* Fallback for older browsers: intrinsic ratio using padding-top */
+  @supports not (aspect-ratio: 16/9) {
+    .flip-card::before {
+      content: "";
+      display: block;
+      padding-top: 56.25%; /* 16:9 ratio; change if you want 4:3 => 75% */
+    }
+  }
+
+  /* Inner is absolutely positioned to fill the reserved space */
+  .flip-card-inner {
+    position: absolute;
+    inset: 0;                       /* top:0; right:0; bottom:0; left:0; */
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+    z-index: 1;
+  }
+
+  /* Trigger rotate */
+  .flip-card:hover .flip-card-inner,
+  .flip-card.flipped .flip-card-inner {
+    transform: rotateY(180deg);
+  }
+
+  /* Face styling */
+  .flip-card-front,
+  .flip-card-back {
+    position: absolute;
+    inset: 0;
+    backface-visibility: hidden;
+    border-radius: 12px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+  }
+
+  /* Make the front image fill the card cleanly */
+  .flip-card-front img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;    /* cover keeps aspect and crops cleanly */
+    display: block;
+  }
+
+  /* Back face */
+  .flip-card-back {
+    transform: rotateY(180deg);
+    background: linear-gradient(135deg, #28a745, #007bff);
+    color: #fff;
+    text-align: center;
+    padding: 1.25rem;
+  }
+
+  /* Mobile: show pointer and use click (no hover) */
+  @media (hover: none) {
+    .flip-card { cursor: pointer; }
+  }
+
+  /* Optional: ensure the whole column stretches to same height */
+  /* .row.align-items-center { align-items: stretch; } */
+</style>
+
+<script>
+  // Enable flip on click (and keyboard accessibility)
+  document.querySelectorAll('.flip-card').forEach(card => {
+    // make focusable for keyboard
+    if (!card.hasAttribute('tabindex')) card.setAttribute('tabindex', '0');
+
+    card.addEventListener('click', () => card.classList.toggle('flipped'));
+
+    card.addEventListener('keydown', (e) => {
+      if (e.key === 'Enter' || e.key === ' ') {
+        e.preventDefault();
+        card.classList.toggle('flipped');
+      }
+    });
+  });
+</script>
+
+
+
+
+<!-- Frequently asked Questions------------------ -->
+
+<section id="why-agri" class="py-5">
+  <div class="container">
+    <h2 class="section-title text-center mb-4 fw-bold text-success">
+      Frequently Asked Questions
+    </h2>
+
+    <div class="row justify-content-center">
+      <div class="col-lg-10">
+        <div class="accordion shadow-lg rounded-4 overflow-hidden" id="whyAccordion">
+
+          <!-- 1 -->
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="expHeading">
+              <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#exp">
+                🌿 Vast Experience – We Know Every Pest Species
+              </button>
+            </h2>
+            <div id="exp" class="accordion-collapse collapse show" data-bs-parent="#whyAccordion">
+              <div class="accordion-body">
+                With our vast experience, we can detect every type of pest and its destructive nature. 
+                We know when they become active and when they remain dormant. We will give you an immediate solution within the shortest time. 
+                Our pest cleaning and elimination products are clean and green.
+              </div>
+            </div>
+          </div>
+
+          <!-- 2 -->
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="coverageHeading">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#coverage">
+                🛡️ Complete Coverage – Trusted Protection
+              </button>
+            </h2>
+            <div id="coverage" class="accordion-collapse collapse" data-bs-parent="#whyAccordion">
+              <div class="accordion-body">
+                Ask the experts at Agri Biochem and you can get the most trusted solutions today. 
+                You can get complete freedom from flies, bedbugs, ants, termites, cockroaches, rats, and so many other species. 
+                We keep your home hygienic, healthy, and safe forever.
+              </div>
+            </div>
+          </div>
+
+          <!-- 3 -->
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="damageHeading">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#damage">
+                ⚡ Damage Control – Just in Time
+              </button>
+            </h2>
+            <div id="damage" class="accordion-collapse collapse" data-bs-parent="#whyAccordion">
+              <div class="accordion-body">
+                Our commercial pest control covers business centers, warehouses, industrial plants, hospitals, hospitality sector, and more. 
+                We can cover the smallest and the largest buildings and plants with our technology and manpower.
+              </div>
+            </div>
+          </div>
+
+          <!-- 4 -->
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="researchHeading">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#research">
+                🔬 Precision Pesticides Research – Effective and Efficient
+              </button>
+            </h2>
+            <div id="research" class="accordion-collapse collapse" data-bs-parent="#whyAccordion">
+              <div class="accordion-body">
+                We have a fully equipped laboratory and testing equipment for analyzing pest behavior and biology.
+                <ul>
+                  <li>Research on pesticide resistance removal</li>
+                  <li>Development of biological pesticide solutions</li>
+                  <li>Prevention of pest growth and expansion</li>
+                  <li>New controls based on the latest technology</li>
+                  <li>Detection and elimination of smallest to biggest pests</li>
+                  <li>Continuous control, removal, and prevention</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- 5 -->
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="safetyHeading">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#safety">
+                🧪 Safety Monitoring – Avoiding Sickness and Safety Risks
+              </button>
+            </h2>
+            <div id="safety" class="accordion-collapse collapse" data-bs-parent="#whyAccordion">
+              <div class="accordion-body">
+                Have you ever felt sick after a pesticide spray? 
+                That is because of toxic elements in the air. At Agri Biochem, we manufacture the safest and cleanest pesticides. 
+                Your home and commercial establishment are completely safe and protected.
+                <br><br>
+                Our manufacturing methods conform to Indian and ISO quality standards. We monitor ingredient ratio, safety factors, effectiveness, permanence, and eco-friendliness.
+              </div>
+            </div>
+          </div>
+
+          <!-- 6 -->
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="teamHeading">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#team">
+                🌍 International Team – Experienced and Specialized
+              </button>
+            </h2>
+            <div id="team" class="accordion-collapse collapse" data-bs-parent="#whyAccordion">
+              <div class="accordion-body">
+                The world trusts us because of our:
+                <ul>
+                  <li>Pesticide specialists with decades of industry experience</li>
+                  <li>Understanding of pest behavior to pesticides</li>
+                  <li>Continuously evolving products</li>
+                  <li>Ability to R&D for every pest species</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- 7 -->
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="controlHeading">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#control">
+                💚 Pesticide Control – Strong on Pests, Soft on Humans
+              </button>
+            </h2>
+            <div id="control" class="accordion-collapse collapse" data-bs-parent="#whyAccordion">
+              <div class="accordion-body">
+                We test all our products intensely before releasing them on the market. 
+                Our testing procedures involve:
+                <ul>
+                  <li>Child and elderly safety</li>
+                  <li>Employee safety at commercial establishments</li>
+                  <li>Safety for pregnant women</li>
+                  <li>Safety for those with lung and heart problems</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- 8 -->
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="topReasonsHeading">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#topReasons">
+                ⭐ Top Reasons to Choose Us
+              </button>
+            </h2>
+            <div id="topReasons" class="accordion-collapse collapse" data-bs-parent="#whyAccordion">
+              <div class="accordion-body">
+                Users from homes, business, agriculture, industries, and other commercial establishments choose Agri Biochem because of our specialized products:
+                <ul>
+                  <li><strong>Eliminate thousands of pest species</strong></li>
+                  <li>Shorten the lifespan of pests</li>
+                  <li>Prevent pest reproduction</li>
+                  <li>Remove all types of insects</li>
+                  <li>Keep your place and things fresh</li>
+                  <li>Work instantly</li>
+                  <li>Control pests in all possible stages</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ================= STYLE ================= -->
+  <style>
+    #why-agri {
+      background: linear-gradient(135deg, #eafaf1, #f6fdf9);
+    }
+
+    #why-agri .accordion-item {
+      border: none;
+      margin-bottom: 12px;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 3px 10px rgba(0, 0, 0, 0.05);
+      opacity: 0;
+      transform: translateY(30px);
+      transition: all 0.6s ease;
+    }
+    #why-agri .accordion-item.fade-in {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    #why-agri .accordion-button {
+      background: #ffffff;
+      color: #198754;
+      font-weight: 600;
+      font-size: 1.05rem;
+      padding: 1rem 1.25rem;
+      transition: background 0.3s ease, color 0.3s ease;
+    }
+    #why-agri .accordion-button:hover {
+      background: #e7f9ef;
+      color: #145c32;
+    }
+
+    #why-agri .accordion-item.active .accordion-button {
+      background: #d1f2e1;
+      color: #145c32;
+      border-left: 4px solid #198754;
+    }
+
+    #why-agri .accordion-body {
+      background: #ffffff;
+      padding: 1.2rem 1.5rem;
+      line-height: 1.6;
+    }
+  </style>
+
+  <!-- ================= SCRIPT ================= -->
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const items = document.querySelectorAll('#why-agri .accordion-item');
+
+      // Fade-in on scroll
+      const observer = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) entry.target.classList.add('fade-in');
+        });
+      }, { threshold: 0.2 });
+      items.forEach(item => observer.observe(item));
+
+      // Active class highlight when opened
+      const acc = document.getElementById('whyAccordion');
+      acc.addEventListener('show.bs.collapse', e => {
+        items.forEach(i => i.classList.remove('active'));
+        const openItem = e.target.closest('.accordion-item');
+        openItem.classList.add('active');
+        // scroll to opened item smoothly
+        setTimeout(() => {
+          openItem.scrollIntoView({ behavior: 'smooth', block: 'center' });
+        }, 300);
+      });
+    });
+  </script>
+</section>
+
+
+
+
+
+
+  </main>
+  <div id="footer"></div>
+  <!-- <section> -->
+        <button id="scrollTopBtn"
+            style="position:fixed; bottom:25px; right:25px; background-color:var(--primary-color); color:#fff; border:none; border-radius:50%; width:50px; height:50px; font-size:1.5rem; display:none; cursor:pointer; z-index:999;">
+            <i class="bi bi-chevron-double-up"></i>
+        </button>
+    <!-- </section> -->
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- AOS JS -->
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script src="assets/js/main.js"></script>
+  <script>  
+    AOS.init({
+      duration: 500,
+      once: true
+    });
+  </script>
+
+</body>
+</html>

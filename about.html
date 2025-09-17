@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>About Us | Agribiochem Pvt. Ltd.</title>
+    <link rel="icon" type="image/png" href="assets/images/logo/Agribiochems_logo1.jpg">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <!-- AOS JS & CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" />
+
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.css" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+
+<body>
+
+    <!-- Scroll Progress Bar -->
+     <div id="scrollProgress"></div>
+     <style>
+     /* Cool Scroll Progress Bar */
+     #scrollProgress {
+        position: fixed;
+        top: 0;
+        left: 0;
+    width: 0%;
+    height: 6px;
+    background: linear-gradient(90deg, #00c6ff, #0072ff);
+    border-radius: 0 4px 4px 0;
+    z-index: 9999;
+    overflow: hidden;
+    transition: width 0.25s ease-out;
+  }
+
+  /* Sparkle/shine effect */
+  #scrollProgress::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -20px;
+    width: 40px;
+    height: 100%;
+    background: linear-gradient(
+      120deg,
+      rgba(255, 255, 255, 0.8),
+      rgba(255, 255, 255, 0)
+    );
+    animation: sparkle 2s infinite linear;
+  }
+
+  /* Glow effect */
+  #scrollProgress {
+    box-shadow: 0 0 10px rgba(0, 114, 255, 0.6),
+                0 0 20px rgba(0, 198, 255, 0.4);
+    animation: glow 2s infinite alternate;
+  }
+
+  @keyframes sparkle {
+    0% { left: -40px; }
+    100% { left: 100%; }
+  }
+
+  @keyframes glow {
+    0% { box-shadow: 0 0 10px rgba(0, 114, 255, 0.6), 0 0 20px rgba(0, 198, 255, 0.4); }
+    50% { box-shadow: 0 0 20px rgba(0, 114, 255, 0.8), 0 0 40px rgba(0, 198, 255, 0.6); }
+    100% { box-shadow: 0 0 10px rgba(0, 114, 255, 0.6), 0 0 20px rgba(0, 198, 255, 0.4); }
+  }
+</style>
+
+<script>
+  window.addEventListener("scroll", () => {
+    let scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
+    let scrollHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+    let progress = (scrollTop / scrollHeight) * 100;
+    document.getElementById("scrollProgress").style.width = progress + "%";
+  });
+</script>
+
+    <!-- ----------Load Header -->
+    <div id="header"></div>
+    <!-- Hero Section with Carousel -->
+    <section id="hero">
+        <div id="heroCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="1500">
+            <!-- Carousel Items -->
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="./assets/images/banner/vision-about.jpg" class="d-block w-100" alt="Slide 1">
+                </div>
+                <div class="carousel-item">
+                    <img src="./assets/images/banner/overview-group.jpg" class="d-block w-100" alt="Slide 2">
+                </div>
+            </div>
+
+            <!-- Carousel Controls -->
+            <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+
+        </div>
+    </section>
+    <section class="py-5 bg-white">
+        <div class="container">
+            <div class="row align-items-center">
+                <!-- Left Side Content -->
+                <div class="col-lg-7 mb-4 mb-lg-0" data-aos="fade-right">
+                    <!-- Section Heading -->
+                    <div class="text-center mb-5">
+                        <h2 class="section-title">Company Overview</h2>
+                        <p class="section-subtitle">Strengthening Agriculture, Empowering Growth</p>
+                    </div>
+                    <p>
+                        <strong>Agri Biochem Pvt. Ltd. (ABCPL)</strong> is a professionally organized public limited
+                        company headquartered in Kolkata, West Bengal, India. Since our incorporation on <strong>26th
+                            February 2020</strong> under the Company Incorporation Rules, 2014, we have been dedicated
+                        to manufacturing nearly <strong>100 high-quality Insecticides, Pesticides, and
+                            Fungicides</strong>, ensuring availability across the country.
+                    </p>
+                    <p>
+                        In a short span of time, ABCPL has gained recognition both as a <strong>toll
+                            manufacturer</strong> and a <strong>contract manufacturer</strong>, serving diverse
+                        agricultural needs. Today, we proudly stand as one of the <strong>fastest-growing ISO 9001:2015
+                            certified Agro-Chemical companies in India</strong>.
+                    </p>
+                    <p>
+                        Our journey is powered by an integrated approach — from <strong>Research to Manufacturing and
+                            Marketing</strong> — allowing us to provide innovative solutions for modern farming. With a
+                        comprehensive vision of agribusiness, ABCPL is committed to meeting the rising demands of global
+                        agriculture and contributing to a more sustainable future.
+                    </p>
+                </div>
+
+                <!-- Right Side Image -->
+                <div class="col-lg-5 text-center" data-aos="fade-left">
+                    <img src="./assets/images/about/img1.webp" alt="Company Overview"
+                        class="img-fluid rounded shadow"
+                        style="max-height: 450px; border-radius: 15px; box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-5 bg-light">
+        <div class="container">
+            <div class="row align-items-center">
+                <!-- Left Side Image -->
+                <div class="col-lg-5 text-center mb-4 mb-lg-0" data-aos="fade-right">
+                    <img src="./assets/images/about/objective_2.webp" alt="Our Objectives"
+                        style="border-radius:15px; box-shadow:0 4px 20px rgba(0,0,0,0.1); max-height:450px;"
+                        class="img-fluid">
+                </div>
+
+                <!-- Right Side Content -->
+                <div class="col-lg-7" data-aos="fade-left">
+                    <!-- Section Heading -->
+                    <div class="text-center mb-5">
+                        <h2 class="section-title">Our Objectives</h2>
+                        <p class="section-subtitle">Driving Innovation Through Quality & Research</p>
+                    </div>
+                    <p>
+                        At <strong>Agri Biochem Pvt. Ltd.</strong>, achieving and sustaining competence in quality
+                        control is our primary quality objective.
+                        We leverage our experience and expertise to bring a scientific edge to our products and
+                        services, ensuring consistent performance and customer satisfaction.
+                    </p>
+                    <p>Our long-term objectives include:</p>
+                    <ul style="padding-left:20px;">
+                        <li style="margin-bottom:8px;">Developing analytical skills among employees</li>
+                        <li style="margin-bottom:8px;">Improving ingredient quality and product safety</li>
+                        <li style="margin-bottom:8px;">Building a database for ectoparasites and pathogens</li>
+                        <li style="margin-bottom:8px;">Manufacturing solutions to eliminate and prevent pathogens</li>
+                        <li style="margin-bottom:8px;">Supplying cutting-edge pest control products</li>
+                        <li style="margin-bottom:8px;">Providing continuous employee training</li>
+                        <li style="margin-bottom:8px;">Innovating in insect farming and pest management</li>
+                        <li style="margin-bottom:8px;">Addressing warehouse pest challenges effectively</li>
+                    </ul>
+                    <p>
+                        Customer feedback and satisfaction remain the driving force behind our innovations.
+                        With a strong commitment to principles and research & development, ABCPL continues to set
+                        benchmarks in the agro-chemical industry.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- Load Footer -->
+    <div id="footer"></div>
+    <!-- Scroll To Top Button -->
+    <section>
+        <button id="scrollTopBtn"
+            style="position:fixed; bottom:25px; right:25px; background-color:var(--primary-color); color:#fff; border:none; border-radius:50%; width:50px; height:50px; font-size:1.5rem; display:none; cursor:pointer; z-index:999;">
+            <i class="bi bi-chevron-double-up"></i>
+        </button>
+    </section>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- AOS JS -->
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
+

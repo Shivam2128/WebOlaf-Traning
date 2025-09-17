@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Career | Agribiochem. Pvt. Ltd.</title>
+  <link rel="icon" type="image/png" href="assets/images/logo/Agribiochems_logo1.jpg">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+
+  <!-- AOS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" />
+
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.css" rel="stylesheet">
+
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+    }
+
+    #footer {
+      margin-top: auto;
+      background-color: #1a0b3c;
+      color: #fff;
+    }
+
+    .section-title {
+      font-weight: 700;
+      font-size: 2rem;
+      margin-bottom: 1rem;
+    }
+
+    .section-sub {
+      color: #555;
+      max-width: 700px;
+      margin: 0 auto 2rem;
+    }
+
+    .cta-btn {
+      font-size: 1.25rem;
+      padding: 0.75rem 2rem;
+      border-radius: 50px;
+    }
+  </style>
+</head>
+<body>
+  <!-- Header -->
+  <div id="header"></div>
+
+  <!-- Hero Section -->
+  <!-- Job Openings -->
+<!-- Job Openings -->
+<section class="py-5" style="background: #e6f5ec;" data-aos="fade-up">
+  <div class="container text-center">
+    <h2 class="section-title text-dark mb-4 text-center fw-bold display-5">
+  🚀 Job Openings</h2>
+
+    <p class="section-sub mb-5">Explore exciting opportunities and become part of our growing team.</p>
+
+    <div class="row g-4">
+  <!-- Research Scientist -->
+  <div class="col-md-4">
+    <div class="card job-card h-100 shadow-sm border-0 rounded-4 p-4" data-aos="zoom-in" data-aos-delay="100">
+      <div class="icon-wrapper mb-3">
+        <i class="bi bi-flask fs-1 text-primary"></i>
+      </div>
+      <h5 class="fw-bold">Research Scientist</h5>
+      <p class="text-muted small">Drive innovation in agricultural biochemistry with groundbreaking research.</p>
+    </div>
+  </div>
+
+  <!-- Marketing Specialist -->
+  <div class="col-md-4">
+    <div class="card job-card h-100 shadow-sm border-0 rounded-4 p-4" data-aos="zoom-in" data-aos-delay="200">
+      <div class="icon-wrapper mb-3">
+        <i class="bi bi-megaphone fs-1 text-success"></i>
+      </div>
+      <h5 class="fw-bold">Marketing Specialist</h5>
+      <p class="text-muted small">Promote sustainable solutions and connect with global markets.</p>
+    </div>
+  </div>
+
+  <!-- Lab Technician -->
+  <div class="col-md-4">
+    <div class="card job-card h-100 shadow-sm border-0 rounded-4 p-4" data-aos="zoom-in" data-aos-delay="300">
+      <div class="icon-wrapper mb-3">
+        <i class="bi bi-gear fs-1 text-danger"></i>
+      </div>
+      <h5 class="fw-bold">Lab Technician</h5>
+      <p class="text-muted small">Assist in research with hands-on lab work and data analysis.</p>
+    </div>
+  </div>
+</div>
+
+<style>
+/* Job Card Base */
+.job-card {
+  transition: transform 0.4s ease, box-shadow 0.4s ease, background 0.4s ease;
+  background: #ffffff;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+/* Gradient hover glow */
+.job-card::before {
+  content: "";
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: radial-gradient(circle at center, rgba(0, 183, 255, 0.15), transparent 60%);
+  opacity: 0;
+  transition: opacity 0.4s ease;
+  z-index: 0;
+}
+
+.job-card:hover::before {
+  opacity: 1;
+}
+
+/* Hover elevation */
+.job-card:hover {
+  transform: translateY(-10px) scale(1.02);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+}
+
+/* Icon circle */
+.icon-wrapper {
+  background: #f0f4f8;
+  width: 80px;
+  height: 80px;
+  margin: 0 auto 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  transition: background 0.4s ease;
+  z-index: 1;
+  position: relative;
+}
+
+/* Icon bounce on hover */
+.job-card:hover .icon-wrapper {
+  background: linear-gradient(135deg, #00c6ff, #0072ff);
+  transform: scale(1.1) rotate(5deg);
+}
+
+.job-card:hover .icon-wrapper i {
+  color: #fff !important;
+}
+
+/* Animate text color subtly on hover */
+.job-card:hover h5 {
+  color: #0072ff;
+}
+
+.job-card:hover p {
+  color: #555;
+}
+</style>
+
+<!-- Optional: Add AOS Init Script if not added already -->
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    if (typeof AOS !== "undefined") {
+      AOS.init({
+        duration: 800,
+        once: true
+      });
+    }
+  });
+</script>
+
+</section>
+
+
+
+<!-- Internships -->
+<section class="py-5 internships-section" data-aos="fade-up">
+  <div class="container text-center">
+    <h2 class="section-title fw-bold mb-3">🌱 Internships</h2>
+    <p class="section-sub mb-5 text-muted">
+      Kickstart your career with hands-on experience at <span class="fw-semibold text-success">Agribiochem</span>.
+    </p>
+
+    <div class="row g-4">
+      <!-- Research Intern -->
+      <div class="col-md-6">
+        <div class="card internship-card h-100 shadow-sm border-0 rounded-4 p-4" data-aos="zoom-in" data-aos-delay="100">
+          <div class="card-body">
+            <h5 class="fw-bold mb-2">Research Intern</h5>
+            <p class="text-muted mb-3">Work alongside our scientists on innovative projects.</p>
+            <!-- <a href="#" class="btn apply-btn btn-sm">Apply Now</a> -->
+          </div>
+        </div>
+      </div>
+
+      <!-- Business Development Intern -->
+      <div class="col-md-6">
+        <div class="card internship-card h-100 shadow-sm border-0 rounded-4 p-4" data-aos="zoom-in" data-aos-delay="200">
+          <div class="card-body">
+            <h5 class="fw-bold mb-2">Business Development Intern</h5>
+            <p class="text-muted mb-3">Learn marketing and client relations in the agri-biotech industry.</p>
+            <!-- <a href="#" class="btn apply-btn btn-sm">Apply Now</a> -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+/* Section BG */
+.internships-section {
+  background: linear-gradient(135deg, #f8fff9, #e6f7ef);
+}
+
+/* Cards */
+.internship-card {
+  transition: transform 0.4s ease, box-shadow 0.4s ease, border 0.4s ease;
+  background: #ffffff;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Subtle floating glow border */
+.internship-card::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 1.2rem;
+  padding: 2px;
+  background: linear-gradient(135deg, #00c6ff, #2ecc71);
+  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+          mask-composite: exclude;
+  opacity: 0;
+  transition: opacity 0.4s ease;
+}
+
+.internship-card:hover::after {
+  opacity: 1;
+}
+
+/* Card hover lift */
+.internship-card:hover {
+  transform: translateY(-8px) scale(1.02);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.12);
+}
+
+/* Card text styling */
+.internship-card h5 {
+  color: #333;
+  transition: color 0.3s ease;
+}
+
+.internship-card:hover h5 {
+  color: #2ecc71;
+}
+
+.internship-card p {
+  color: #666;
+}
+
+/* Button styling */
+.apply-btn {
+  background: #2ecc71;
+  border: none;
+  color: #fff;
+  padding: 6px 16px;
+  border-radius: 50px;
+  font-weight: 500;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.apply-btn:hover {
+  background: #27ae60;
+  transform: scale(1.05);
+  color: #fff;
+}
+
+/* Optional: Ripple animation on button click */
+.apply-btn:active::after {
+  content: "";
+  position: absolute;
+  border-radius: 50%;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.4);
+  top: 0;
+  left: 0;
+  animation: ripple 0.6s ease-out;
+}
+
+@keyframes ripple {
+  from { transform: scale(0); opacity: 0.8; }
+  to { transform: scale(2); opacity: 0; }
+}
+</style>
+
+<!-- Initialize AOS (if not already initialized) -->
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+  if (typeof AOS !== "undefined") {
+    AOS.init({
+      duration: 800,
+      once: true
+    });
+  }
+});
+</script>
+
+
+<!-- Employee Benefits -->
+<section class="py-5 benefits-section" data-aos="fade-up">
+  <div class="container text-center">
+    <h2 class="section-title fw-bold mb-3">💼 Employee Benefits</h2>
+    <p class="section-sub mb-5 text-muted">
+      We value our employees and provide a wide range of perks.
+    </p>
+
+    <div class="row g-4">
+      <div class="col-md-3">
+        <div class="card benefit-card h-100 shadow-sm border-0 rounded-4 p-4" data-aos="zoom-in" data-aos-delay="100">
+          <div class="card-body">
+            <i class="bi bi-heart fs-1 text-primary mb-2"></i>
+            <h6 class="fw-bold mt-2">Health Coverage</h6>
+            <p class="text-muted small">Comprehensive medical insurance plans.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-3">
+        <div class="card benefit-card h-100 shadow-sm border-0 rounded-4 p-4" data-aos="zoom-in" data-aos-delay="200">
+          <div class="card-body">
+            <i class="bi bi-graph-up-arrow fs-1 text-primary mb-2"></i>
+            <h6 class="fw-bold mt-2">Career Growth</h6>
+            <p class="text-muted small">Learning & mentorship opportunities.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-3">
+        <div class="card benefit-card h-100 shadow-sm border-0 rounded-4 p-4" data-aos="zoom-in" data-aos-delay="300">
+          <div class="card-body">
+            <i class="bi bi-clock-history fs-1 text-primary mb-2"></i>
+            <h6 class="fw-bold mt-2">Work-Life Balance</h6>
+            <p class="text-muted small">Flexible schedules and time-off policies.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-3">
+        <div class="card benefit-card h-100 shadow-sm border-0 rounded-4 p-4" data-aos="zoom-in" data-aos-delay="400">
+          <div class="card-body">
+            <i class="bi bi-people fs-1 text-primary mb-2"></i>
+            <h6 class="fw-bold mt-2">Team Culture</h6>
+            <p class="text-muted small">Supportive, collaborative environment.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+/* Section background */
+.benefits-section {
+  background: linear-gradient(135deg, #f9fbff, #eef5ff);
+}
+
+/* Card styles */
+.benefit-card {
+  transition: transform 0.4s ease, box-shadow 0.4s ease, border 0.4s ease;
+  background: #ffffff;
+  position: relative;
+  overflow: hidden;
+  border-radius: 1.2rem;
+}
+
+/* Glow border like internships */
+.benefit-card::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 1.2rem;
+  padding: 2px;
+  background: linear-gradient(135deg, #00c6ff, #0072ff);
+  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+          mask-composite: exclude;
+  opacity: 0;
+  transition: opacity 0.4s ease;
+}
+
+.benefit-card:hover::after {
+  opacity: 1;
+}
+
+/* Lift and shadow on hover */
+.benefit-card:hover {
+  transform: translateY(-8px) scale(1.02);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.12);
+}
+
+/* Text hover accent */
+.benefit-card h6 {
+  color: #333;
+  transition: color 0.3s ease;
+}
+
+.benefit-card:hover h6 {
+  color: #0072ff;
+}
+
+.benefit-card p {
+  color: #666;
+}
+</style>
+
+
+<!-- Join Our Team -->
+<section class="py-5 text-center join-team-section" data-aos="zoom-in">
+  <div class="container">
+    <h2 class="section-title fw-bold mb-3">🚀 Join Our Team</h2>
+    <p class="section-sub mb-4 text-muted">
+      Take the next step in your career journey with 
+      <span class="fw-semibold text-primary">Agribiochem Pvt. Ltd.</span>
+    </p>
+    <a href="contact.html" class="btn join-btn shadow-lg">Join Us</a>
+  </div>
+</section>
+
+<style>
+/* Section Background */
+.join-team-section {
+  background: linear-gradient(135deg, #f0f7ff, #eaf5ff, #f5fbff);
+  border-top: 1px solid #e2e8f0;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+/* Heading styling */
+.join-team-section .section-title {
+  font-size: 2.2rem;
+  color: #1e293b;
+}
+
+.join-team-section .section-sub {
+  font-size: 1.1rem;
+  color: #64748b;
+}
+
+/* Glowing Gradient Button */
+.join-btn {
+  position: relative;
+  display: inline-block;
+  padding: 14px 40px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #fff;
+  background: linear-gradient(135deg, #0072ff, #00c6ff);
+  border: none;
+  border-radius: 50px;
+  overflow: hidden;
+  z-index: 1;
+  transition: transform 0.3s ease;
+}
+
+/* Glow spread on hover */
+.join-btn::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(circle at center, rgba(255,255,255,0.4), transparent 60%);
+  opacity: 0;
+  transition: opacity 0.4s ease, transform 0.4s ease;
+  border-radius: inherit;
+  z-index: -1;
+}
+
+.join-btn:hover::before {
+  opacity: 1;
+  transform: scale(2);
+}
+
+.join-btn:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 30px rgba(0,114,255,0.4);
+}
+</style>
+
+
+
+  <!-- Footer -->
+  <div id="footer"></div>
+
+  <!-- Scroll To Top -->
+  <button id="scrollTopBtn"
+    style="position:fixed; bottom:25px; right:25px; background-color:var(--primary-color); color:#fff; border:none; border-radius:50%; width:50px; height:50px; font-size:1.5rem; display:none; cursor:pointer; z-index:999;">
+    <i class="bi bi-chevron-double-up"></i>
+  </button>
+
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script src="assets/js/main.js"></script>
+  <script>
+    AOS.init({
+      duration: 600,
+      once: true
+    });
+
+    // Scroll to top button
+    const scrollBtn = document.getElementById("scrollTopBtn");
+    window.onscroll = () => {
+      scrollBtn.style.display = (document.documentElement.scrollTop > 200) ? "block" : "none";
+    };
+    scrollBtn.onclick = () => window.scrollTo({ top: 0, behavior: "smooth" });
+  </script>
+</body>
+</html>

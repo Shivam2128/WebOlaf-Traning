@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Products | Agribiochem Pvt. Ltd.</title>
+    <link rel="icon" type="image/png" href="assets/images/logo/Agribiochems_logo1.jpg">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <!-- AOS JS & CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" />
+
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.css" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+
+<body>
+<!-- Scroll Progress Bar -->
+<div id="scrollProgress"></div>
+
+<style>
+  /* Cool Scroll Progress Bar */
+  #scrollProgress {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 6px;
+    background: linear-gradient(90deg, #00c6ff, #0072ff);
+    border-radius: 0 4px 4px 0;
+    z-index: 9999;
+    overflow: hidden;
+    transition: width 0.25s ease-out;
+  }
+
+  /* Sparkle/shine effect */
+  #scrollProgress::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -20px;
+    width: 40px;
+    height: 100%;
+    background: linear-gradient(
+      120deg,
+      rgba(255, 255, 255, 0.8),
+      rgba(255, 255, 255, 0)
+    );
+    animation: sparkle 2s infinite linear;
+  }
+
+  /* Glow effect */
+  #scrollProgress {
+    box-shadow: 0 0 10px rgba(0, 114, 255, 0.6),
+                0 0 20px rgba(0, 198, 255, 0.4);
+    animation: glow 2s infinite alternate;
+  }
+
+  @keyframes sparkle {
+    0% { left: -40px; }
+    100% { left: 100%; }
+  }
+
+  @keyframes glow {
+    0% { box-shadow: 0 0 10px rgba(0, 114, 255, 0.6), 0 0 20px rgba(0, 198, 255, 0.4); }
+    50% { box-shadow: 0 0 20px rgba(0, 114, 255, 0.8), 0 0 40px rgba(0, 198, 255, 0.6); }
+    100% { box-shadow: 0 0 10px rgba(0, 114, 255, 0.6), 0 0 20px rgba(0, 198, 255, 0.4); }
+  }
+</style>
+
+<script>
+  window.addEventListener("scroll", () => {
+    let scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
+    let scrollHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+    let progress = (scrollTop / scrollHeight) * 100;
+    document.getElementById("scrollProgress").style.width = progress + "%";
+  });
+</script>
+
+
+    <!-- Load Header -->
+    <div id="header"></div>
+    <!-- Hero Section with Carousel -->
+    <section id="hero">
+        <div id="heroCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="1500">
+            <!-- Carousel Items -->
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="./assets/images/banner/vision-about.jpg" class="d-block w-100" alt="Slide 1">
+                </div>
+                <div class="carousel-item">
+                    <img src="./assets/images/banner/overview-group.jpg" class="d-block w-100" alt="Slide 2">
+                </div>
+            </div>
+
+            <!-- Carousel Controls -->
+            <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+
+        </div>
+    </section>
+    <!-- Products Section -->
+    <section class="py-5 bg-white">
+        <div class="container">
+            <!-- Section Title -->
+            <div class="text-center mb-5">
+                <h2 class="section-title">Our Products</h2>
+                <p class="section-subtitle">High-Quality Agro-Chemicals Empowering Farmers Nationwide</p>
+            </div>
+
+            <!-- INSECTICIDES -->
+            <div class="card bg-light rounded-4 shadow-sm mb-5 col-lg-12 col-md-12 col-12 p-4">
+                <div class="row g-4 align-items-center flex-column-reverse flex-lg-row">
+                    <!-- Content -->
+                    <div class="col-lg-7 col-12">
+                        <h4 class="fw-bold" style="color: var(--primary-color);">Insecticides</h4>
+                        <p>
+                            At <strong>Agri Biochem Pvt. Ltd.</strong>, we believe protecting crops also means
+                            protecting people. Our <strong>insecticides</strong> not only shield fields from harmful
+                            pests
+                            but also safeguard communities from <strong>vector-borne diseases</strong> like malaria,
+                            dengue,
+                            and food-borne infections. By reducing pest populations, we help farmers deliver
+                            <strong>cleaner, safer harvests</strong> to families. Every spray of our insecticides is a
+                            step
+                            toward <strong>healthier living environments</strong>, ensuring that both farmers and
+                            communities thrive together.
+                        </p>
+
+                        <h6 class="fw-semibold">Key Features:</h6>
+                        <ul>
+                            <li>Fast action against disease-spreading insects</li>
+                            <li>Helps reduce risk of mosquito- and fly-borne illnesses</li>
+                            <li>Safe when applied as per guidelines</li>
+                            <li>Contributes to healthier food systems</li>
+                        </ul>
+                        <h6 class="fw-semibold">Usage:</h6>
+                        <ul>
+                            <li>Effective in agricultural fields, community areas, and household protection</li>
+                            <li>Supports integrated pest management for healthier living</li>
+                            <li>Follow recommended dosage and safety guidelines for best results</li>
+                        </ul>
+                    </div>
+                    <!-- Image -->
+                    <div class="col-lg-5 col-12">
+                        <img src="assets/images/products/img1.webp" alt="Insecticides"
+                            class="img-fluid rounded shadow">
+                    </div>
+                </div>
+            </div>
+
+            <!-- HERBICIDES -->
+            <div class="card bg-light rounded-4 shadow-sm mb-5 col-lg-12 col-md-12 col-12 p-4">
+                <div class="row g-4 align-items-center">
+                    <!-- Image -->
+                    <div class="col-lg-5 col-12">
+                        <img src="assets/images/products/img2.webp" alt="Herbicides"
+                            class="img-fluid rounded shadow">
+                    </div>
+                    <!-- Content -->
+                    <div class="col-lg-7 col-12">
+                        <h4 class="fw-bold text-primary">Herbicides</h4>
+                        <p>
+                            At <strong>Agri Biochem Pvt. Ltd.</strong>, we know that weeds do more than steal nutrients
+                            from crops—they can also spread allergens and toxins harmful to people. Our
+                            <strong>herbicides</strong> help create <strong>cleaner farmlands</strong>, reduce
+                            contamination
+                            in food supplies, and improve the quality of what reaches your plate. By maintaining
+                            weed-free fields, we make sure families enjoy <strong>safer grains, vegetables, and water
+                                sources</strong>. Healthy fields mean <strong>healthier communities</strong>.
+                        </p>
+
+                        <h6 class="fw-semibold">Key Features:</h6>
+                        <ul>
+                            <li>Selective action ensures safe crops and clean harvests</li>
+                            <li>Reduces contamination risks in food supply</li>
+                            <li>Prevents allergen-spreading weeds</li>
+                            <li>Safer agricultural and living environments</li>
+                        </ul>
+                        <h6 class="fw-semibold">Usage:</h6>
+                        <ul>
+                            <li>Suitable for farming fields, orchards, and community gardens</li>
+                            <li>Helps maintain clean landscapes and safer food chains</li>
+                            <li>Must be applied according to public safety guidelines</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- FUNGICIDES -->
+            <div class="card bg-light rounded-4 shadow-sm mb-5 col-lg-12 col-md-12 col-12 p-4">
+                <div class="row g-4 align-items-center flex-column-reverse flex-lg-row">
+                    <!-- Content -->
+                    <div class="col-lg-7 col-12">
+                        <h4 class="fw-bold text-primary">Fungicides</h4>
+                        <p>
+                            At <strong>Agri Biochem Pvt. Ltd.</strong>, we see crop protection as a way to
+                            <strong>protect families</strong> too. Fungal diseases not only damage plants but can also
+                            produce toxins that affect <strong>human health</strong>. Our <strong>fungicides</strong>
+                            prevent these risks, keeping food <strong>safe, clean, and nourishing</strong>. By helping
+                            farmers grow fruits, vegetables, and cereals free from harmful fungi, we support
+                            <strong>better diets, stronger immunity, and healthier communities</strong>.
+                            Every product we deliver is backed by research, innovation, and care for the
+                            <strong>well-being of people</strong>. When farmers choose our solutions, they are not only
+                            protecting their harvests but also contributing to a <strong>healthier tomorrow for every
+                                household</strong>.
+                            Together, we make sure that the food reaching your table is <strong>pure, wholesome, and
+                                safe for generations to come</strong>.
+                        </p>
+
+                        <h6 class="fw-semibold">Key Features:</h6>
+                        <ul>
+                            <li>Prevents dangerous fungal toxins in food supply</li>
+                            <li>Enhances overall food safety for communities</li>
+                            <li>Reduces risks of respiratory infections caused by fungal spores</li>
+                            <li>Trusted for both farmers and public well-being</li>
+                        </ul>
+                        <h6 class="fw-semibold">Usage:</h6>
+                        <ul>
+                            <li>Effective in fruits, vegetables, and cereals consumed daily</li>
+                            <li>Prevents storage molds that impact human health</li>
+                            <li>Use as per safety and dosage instructions for maximum protection</li>
+                        </ul>
+                    </div>
+                    <!-- Image -->
+                    <div class="col-lg-5 col-12">
+                        <img src="assets/images/products/img3.webp" alt="Fungicides"
+                            class="img-fluid rounded shadow">
+                    </div>
+                </div>
+            </div>
+
+            <!-- RODENTICIDES -->
+            <div class="card bg-light rounded-4 shadow-sm mb-5 col-lg-12 col-md-12 col-12 p-4">
+                <div class="row g-4 align-items-center">
+                    <!-- Image -->
+                    <div class="col-lg-5 col-12">
+                        <img src="assets/images/products/img4.webp" alt="Rodenticides"
+                            class="img-fluid rounded shadow">
+                    </div>
+                    <!-- Content -->
+                    <div class="col-lg-7 col-12">
+                        <h4 class="fw-bold text-primary">Rodenticides</h4>
+                        <p>
+                            At <strong>Agri Biochem Pvt. Ltd.</strong>, we work to protect not just harvests but also
+                            <strong>public health</strong>. Rodents are carriers of <strong>dangerous diseases</strong>
+                            like leptospirosis, plague, and hantavirus, and they contaminate stored grains and household
+                            food supplies. Our <strong>rodenticides</strong> provide <strong>long-lasting
+                                protection</strong>,
+                            reducing infestations in warehouses, fields, and homes. By keeping food safe, surroundings
+                            cleaner, and communities free from rodent-borne illnesses, we help families enjoy
+                            <strong>healthier, safer, and more secure lives</strong>.
+                        </p>
+                        <h6 class="fw-semibold">Key Features:</h6>
+                        <ul>
+                            <li>Effective control of disease-spreading rodents</li>
+                            <li>Protects stored food from contamination</li>
+                            <li>Ensures safer community health standards</li>
+                            <li>Long-lasting impact for public safety</li>
+                        </ul>
+                        <h6 class="fw-semibold">Usage:</h6>
+                        <ul>
+                            <li>Suitable for warehouses, grain storage units, and residential surroundings</li>
+                            <li>Reduces spread of rodent-borne diseases</li>
+                            <li>Must be applied carefully under safety guidelines</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+
+    <!-- Load Footer -->
+    <div id="footer"></div>
+    <!-- Scroll To Top Button -->
+    <section>
+        <button id="scrollTopBtn"
+            style="position:fixed; bottom:25px; right:25px; background-color:var(--primary-color); color:#fff; border:none; border-radius:50%; width:50px; height:50px; font-size:1.5rem; display:none; cursor:pointer; z-index:999;">
+            <i class="bi bi-chevron-double-up"></i>
+        </button>
+    </section>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- AOS JS -->
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
