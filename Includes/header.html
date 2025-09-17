@@ -1,0 +1,56 @@
+<!-- Header / Navbar -->
+<nav class="navbar navbar-expand-lg sticky-top">
+  <div class="container">
+    <!-- Logo -->
+    <a class="navbar-brand fw-bold text-primary" href="#">
+      <img src="./assets/images/logo/Agribiochems_logo.png" alt="Agribiochem Logo" height="80" class="me-2">
+    </a>
+
+    <!-- Navbar Toggler -->
+    <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar">
+      <i class="bi bi-list fs-1 fw-bold" style="color: var(--primary-color);"></i>
+    </button>
+
+    <!-- Nav Items -->
+    <div class="collapse navbar-collapse" id="mainNavbar">
+      <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="company.html">Company</a></li>
+        <li class="nav-item"><a class="nav-link" href="How do we Work.html">How Do We Work</a></li>
+        <li class="nav-item"><a class="nav-link" href="products.html">Products</a></li>
+        <li class="nav-item"><a class="nav-link" href="R&D.html">R&D</a></li>
+        <li class="nav-item"><a class="nav-link" href="Career.html">Career</a></li>
+        <li class="nav-item"><a class="nav-link" href="Contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- Custom Styles -->
+<style>
+  /* Navbar link style */
+  .navbar-nav .nav-link {
+    position: relative;
+    color: rgba(0, 114, 255, 0.6) !important; /* blue text with transparency */
+    transition: color 0.3s ease-in-out;
+    padding-bottom: 4px; /* space for underline */
+  }
+
+  /* Hover underline effect */
+  .navbar-nav .nav-link::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 2px;
+    width: 0%;
+    background-color: #2e7d32; /* green underline */
+    transition: width 0.3s ease-in-out;
+  }
+
+  /* Show underline only on hover */
+  .navbar-nav .nav-link:hover::after {
+    width: 100%;
+  }
+</style>
